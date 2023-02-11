@@ -1,4 +1,4 @@
-/* Auteur : Snips, sur http://easydomoticz.com/forum/
+/* Auteur : Snips, sur https://easydomoticz.com/forum/viewtopic.php?t=158&start=130
 /* Ce programme a été élaboré à partir du code de M. Olivier LEBRUN réutilisé en grande partie pour réaliser un encodeur OWL CM180 (Micro+)
 /* ainsi qu'à partir du code (+ carte électronique à relier au compteur) de M. Pascal CARDON pour la partie téléinfo 
 /* Onlinux a fourni des trames du OWL CM180 pour le reverse ingineering (il a développé lui même un code de décodage des trames, différent de mon code )
