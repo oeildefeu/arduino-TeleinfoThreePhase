@@ -3,6 +3,7 @@
 /* Onlinux a fourni des trames du OWL CM180 me permettant de faire les algo d'encodage (il a développé un code de décodage des trames)
 /* Je remercie les auteurs. Ci-dessous les liens vers leur site internet.
 /* ***** 04/03/2015 ******** Snips *******
+/* ***** Non compatible avec un abonnement "tarif de base" sans Heures creuses / heures Pleines
 /*=======================================================================================================================
  
 ONLINUX : Decode and parse the Oregon Scientific V3 radio data transmitted by OWL CM180 Energy sensor (433.92MHz)
