@@ -56,7 +56,7 @@ https://github.com/onlinux/OWL-CMR180
 
 
 #include <SoftwareSerial.h>
-//#include <LowPower.h> //snips : télécharger la librairie LOwPower.h sur https://github.com/rocketscream/Low-Power/archive/master.zip et décompresser dans arduino\libraries
+#include <LowPower.h> //snips : télécharger la librairie LOwPower.h sur https://github.com/rocketscream/Low-Power/archive/master.zip et décompresser dans arduino\libraries
 
 
 const byte TX_PIN = 3;  //emetteur 433 MHZ 
@@ -775,8 +775,8 @@ if (teleInfoReceived)
   mySerial->end(); //NECESSAIRE !! arrête les interruptions de softwareserial (lecture du port téléinfo) pour émission des trames OWL 
   sendOregon(OregonMessageBuffer, sizeof(OregonMessageBuffer));    // Send the Message over RF
   //**********snips : exemple de mise en veille - activer les lignes ci-dessous pour faire dormir l'arduino pendant 8 secondes ***************************
-  //LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
-  //LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
+  LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
+  LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
   //**********snips : fin   exemple de mise en veille *****************************************************************************************
   mySerial->begin(1200);  //NECESSAIRE !! relance les interuptions pour la lecture du port téléinfo
   displayTeleInfo();  // console pour voir les trames téléinfo.. désactiver cette ligne pour économiser de l'énergie
